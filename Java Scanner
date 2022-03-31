@@ -1,0 +1,22 @@
+package homeWork;
+
+import java.util.Scanner;
+
+public class HomeWork {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Введите 5-ти значное число");
+		int number = scanner.nextInt();
+		int first = number / 10_000;
+		int second = number % 10_000 / 1_000;
+		int third = number % 1_000 / 100;
+		int four = number % 100 / 10;
+		int five = number % 10 / 1;
+
+		System.out.println(first);
+		System.out.println(second);
+		System.out.println(third);
+		System.out.println(four);
+		System.out.println(five);
+	}
+}
